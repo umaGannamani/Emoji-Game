@@ -1,0 +1,99 @@
+/* Write your code here. */
+.winOrLose-Container {
+    display: flex;
+    background-color: #ffffff33;
+    width: 80%;
+    border: 3px solid #ffffff33;
+    border-radius: 18px;
+}
+.winOrLose-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 0;
+}
+.winOrLose-image-container {
+    order: 1;
+}
+.winOrLose-status {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.winOrLose-label {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+}
+.winOrLose-current-score {
+    text-align: center;
+    color: #6a59ff;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px;
+}
+.winOrLose-button {
+    color: #3d3d3d;
+    background-color: #ffce27;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin: 16px;
+    padding: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.win-or-lose-image {
+    width: 150px;
+    height: 200px;
+}
+@media (max-width: 540px){
+    .winOrLose-Container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px 20px 10px;
+    }
+    .winOrLose-text-container{
+        order: 1;
+    }
+    .winOrLose-image-container{
+        order: 0;
+    }
+}
+@media (min-width: 541px){
+    .winOrLose-Container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px 20px 70px;
+    }
+}
+@media (min-width: 768px){
+    .winOrLose-status{
+        font-size: 43px;
+    }
+    .winOrLose-current-score {
+        font-size: 48px;
+    }
+}
+@media (min-width: 992px){
+    .winOrLose-label {
+        font-size: 36px;
+    }
+    .win-or-lose-image {
+        width: 300px;
+        height: 400px;
+    }
+}
